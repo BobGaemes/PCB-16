@@ -122,7 +122,7 @@
     <a name="appearance" val="custom"/>
     <a name="circuit" val="MAIN"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="16.0"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1970,3240)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="radix" val="16"/>
