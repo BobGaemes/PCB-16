@@ -1,0 +1,33 @@
+.org $8000
+
+start:
+    SEI
+    PIE 2
+    PIE 3
+    CLI
+    CLC
+
+    LDR A, #0
+    LDR B, #1
+    LDR C, #0
+loop:
+    AND B, B, A ; A = B
+    AND C, C, B ; B = C
+    ADC A, B, C ; C = A + B
+    PSD 0, C
+    JMP loop
+
+int0:
+    LDR A, #0
+    LDR B, #1
+    LDR C, #0
+    RTI
+
+int1:
+    RST
+
+.org $FFFB
+.word int0
+.word int1
+.org $FFFF
+.word start
