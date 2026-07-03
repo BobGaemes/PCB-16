@@ -1,0 +1,126 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b47e9400-d230-4139-af56-d4bfe7921e6d")
+	(paper "A3")
+	(title_block
+		(date "2026-07-03")
+		(rev "v1.0.0")
+		(company "KnubbHub Electronics")
+		(comment 1 "Author: Albin Jaurén")
+	)
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 78.74 89.535) (xy 102.87 89.535)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44f2ae87-7f6a-42c3-a7c4-2cf54bab6c3f")
+	)
+	(bus
+		(pts
+			(xy 78.74 79.375) (xy 123.19 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b836906-c08b-48fc-bbf3-9cec26ea3ec6")
+	)
+	(label "MICROCODE{ALU INST_DEC REG MEM INT PORT MR}"
+		(at 81.915 79.375 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73a4c5fe-e73f-487e-b21b-a4fcf02d72ef")
+	)
+	(label "BUS{D[0..15]}"
+		(at 84.455 89.535 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4e28d8b-51f7-4ccc-80ee-c421d8fe0732")
+	)
+	(sheet
+		(at 52.705 69.85)
+		(size 26.035 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "978b86cd-0002-405e-a8ad-21f6f323af95")
+		(property "Sheetname" "ALU"
+			(at 52.705 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ALU.kicad_sch"
+			(at 52.705 95.8346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BUS" bidirectional
+			(at 78.74 89.535 0)
+			(uuid "d6f82e1f-2e31-40e6-b25f-2f2f3e28188f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MICROCODE" bidirectional
+			(at 78.74 79.375 0)
+			(uuid "cbdf4285-14a6-4a5b-bbcd-913092d7bc09")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "PCB-16"
+				(path "/b47e9400-d230-4139-af56-d4bfe7921e6d"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
