@@ -75,6 +75,7 @@ Port interrupt address: $FFED–$FFFD
 """
 
 # ── Control signal bit masks ─────────────────────────────────────────────────
+# KICAD BUS: MICROCODE{ARE BRE ADDE SUBE ANDE XORE SHE0 SHE1 AOE MWE ADWE MOE SPE SCE SWE SDU SPOE RWE RADWE JMP CE ROE OP0 OP1 OP2 OPOE INSTDONE INSTWE1 INSTWE2 HLT PCOE FLAGE PWE POE IWE CWE MR CLRINT PINTE PTADWE PTWE PTOE}
 ARE      = 1 << 0
 BRE      = 1 << 1
 ADDE     = 1 << 2
